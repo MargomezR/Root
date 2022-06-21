@@ -1,0 +1,97 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            "#include:Redirect_to_Alternate_Hostname.json",
+            "#include:Test.json"
+        ],
+        "behaviors": [
+            {
+                "name": "origin",
+                "options": {
+                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                    "compress": true,
+                    "enableTrueClientIp": false,
+                    "forwardHostHeader": "CUSTOM",
+                    "hostname": "www.gsshappylearning.com",
+                    "httpPort": 80,
+                    "httpsPort": 443,
+                    "originSni": true,
+                    "originType": "CUSTOMER",
+                    "verificationMode": "CUSTOM",
+                    "originCertificate": "",
+                    "ports": "",
+                    "customForwardHostHeader": "www.gsshappylearning.com",
+                    "customValidCnValues": [
+                        "{{Origin Hostname}}",
+                        "{{Forward Host Header}}"
+                    ],
+                    "originCertsToHonor": "CUSTOM_CERTIFICATES",
+                    "customCertificates": [
+                        {
+                            "subjectCN": "gsshappylearning.com",
+                            "subjectAlternativeNames": [
+                                "gsshappylearning.com",
+                                "www.gsshappylearning.com"
+                            ],
+                            "subjectRDNs": {
+                                "CN": "gsshappylearning.com"
+                            },
+                            "issuerRDNs": {
+                                "C": "US",
+                                "OU": "Server CA 1B",
+                                "CN": "Amazon",
+                                "O": "Amazon"
+                            },
+                            "notBefore": 1599004800000,
+                            "notAfter": 1633262400000,
+                            "sigAlgName": "SHA256withRSA",
+                            "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoUrSgP2Vp4rfCuUJbhE4KkwwyKJ1U46bmv98tVnUaiswW1Q09gxRTb8mXjwx2AAzlLjEvwS3LXz3exjQVYUtOQkghsw3K4v/QVj6J/9bilnG/Iw1Rr6z/RQPqiPhxLS0HcGV3NibeN3d+PYkcMDq5S//YWp+i8WNzw0dH0PwgE3svrOob4gdsn4s3eYi9mwaw5jUIVaicd9ZowZgHS6QV3MZgQ2vQppg6giKVj3PGeurA32jX5Z7idvUoETeIQ3/nfDR/nXhsUdRwQl01Cmw9+izuUVnq36Ds9sErN/3rijLgFiWMj+C+64drBU/f5V/3aYEAZnkuYMswJavlGQ7NwIDAQAB",
+                            "publicKeyAlgorithm": "RSA",
+                            "publicKeyFormat": "X.509",
+                            "serialNumber": "9495910095733242438594184095832106743",
+                            "version": 3,
+                            "sha1Fingerprint": "893ddea371bc1a6dd4db2245e01f904bc419233e",
+                            "pemEncodedCert": "-----BEGIN CERTIFICATE-----\nMIIFizCCBHOgAwIBAgIQByTYg76JGmgMC4VL6Jpm9zANBgkqhkiG9w0BAQsFADBG\nMQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRUwEwYDVQQLEwxTZXJ2ZXIg\nQ0EgMUIxDzANBgNVBAMTBkFtYXpvbjAeFw0yMDA5MDIwMDAwMDBaFw0yMTEwMDMx\nMjAwMDBaMB8xHTAbBgNVBAMTFGdzc2hhcHB5bGVhcm5pbmcuY29tMIIBIjANBgkq\nhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoUrSgP2Vp4rfCuUJbhE4KkwwyKJ1U46b\nmv98tVnUaiswW1Q09gxRTb8mXjwx2AAzlLjEvwS3LXz3exjQVYUtOQkghsw3K4v/\nQVj6J/9bilnG/Iw1Rr6z/RQPqiPhxLS0HcGV3NibeN3d+PYkcMDq5S//YWp+i8WN\nzw0dH0PwgE3svrOob4gdsn4s3eYi9mwaw5jUIVaicd9ZowZgHS6QV3MZgQ2vQppg\n6giKVj3PGeurA32jX5Z7idvUoETeIQ3/nfDR/nXhsUdRwQl01Cmw9+izuUVnq36D\ns9sErN/3rijLgFiWMj+C+64drBU/f5V/3aYEAZnkuYMswJavlGQ7NwIDAQABo4IC\nmjCCApYwHwYDVR0jBBgwFoAUWaRmBlKge5WSPKOUByeWdFv5PdAwHQYDVR0OBBYE\nFNn5k7kxbCXbN4b8z5aypPwJ9M+wMDkGA1UdEQQyMDCCFGdzc2hhcHB5bGVhcm5p\nbmcuY29tghh3d3cuZ3NzaGFwcHlsZWFybmluZy5jb20wDgYDVR0PAQH/BAQDAgWg\nMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAs\nhipodHRwOi8vY3JsLnNjYTFiLmFtYXpvbnRydXN0LmNvbS9zY2ExYi5jcmwwIAYD\nVR0gBBkwFzALBglghkgBhv1sAQIwCAYGZ4EMAQIBMHUGCCsGAQUFBwEBBGkwZzAt\nBggrBgEFBQcwAYYhaHR0cDovL29jc3Auc2NhMWIuYW1hem9udHJ1c3QuY29tMDYG\nCCsGAQUFBzAChipodHRwOi8vY3J0LnNjYTFiLmFtYXpvbnRydXN0LmNvbS9zY2Ex\nYi5jcnQwDAYDVR0TAQH/BAIwADCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2APZc\nlC/RdzAiFFQYCDCUVo7jTRMZM7/fDC8gC8xO8WTjAAABdE7QfZwAAAQDAEcwRQIg\nMJ1+HuDZrC7mDhWWSTQK0RW+WicfSAfxDSvjeTaAWlMCIQC7EFom0UXC2ZUm26LQ\n+fJPhgHsQp7BRWkffDh0THciywB2AFzcQ5L+5qtFRLFemtRW5hA3+9X6R9yhc5Sy\nXub2xw7KAAABdE7QfhcAAAQDAEcwRQIhANM2FCXMBSGcp0me8esz9htUpuGA+SJ+\nJaZFnmzLNkdoAiAZzzXF9gJIytIKRaGSOuURn5HpDDLLqNnyjbWcin6whDANBgkq\nhkiG9w0BAQsFAAOCAQEAwi0bhEqiThjnDk/9J6OrGKCgSq0uxh1tM1lGNLUa/pDY\nd5T9n3vd96n5ra3vSmiyv9gcx0Gx6u2NJSWFqtyeXXahPu0j4D5B57Jj1eh7B0vx\nySmN5i4CyWxdH4BvvHR9YKdgFWs67mwPrsaW/GLZwaaZ3YQJ1gUI3i7fKvaQZFBT\nyU8t/DMiG//irORTlTByHOMxnyRdaktbuozdLwzkXpxe3yvYDJ9n962F3B/kpzo5\nNMKhc2BREkF7Z9KSCnGWHIDMyzb3+E9Xhx8LjI9R7TmX2OVzXLZn3VkPD9IxF6C5\ngNiNTNF/MiJuQ3HrtYZMqNPzRXAYVO0cMvrZALnEdA==\n-----END CERTIFICATE-----\n",
+                            "canBeLeaf": true,
+                            "canBeCA": false,
+                            "selfSigned": false
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "cpCode",
+                "options": {
+                    "value": {
+                        "id": 862667,
+                        "description": "marcotest.com",
+                        "products": [
+                            "Fresca"
+                        ],
+                        "createdDate": 1560441022000,
+                        "cpCodeLimits": {
+                            "limit": 3548,
+                            "currentCapacity": 349,
+                            "limitType": "account"
+                        },
+                        "name": "marcotest.com"
+                    }
+                }
+            },
+            {
+                "name": "caching",
+                "options": {
+                    "behavior": "MAX_AGE",
+                    "mustRevalidate": false,
+                    "ttl": "0s"
+                }
+            }
+        ],
+        "options": {
+            "is_secure": true
+        },
+        "variables": [],
+        "comments": "The behaviors in the Default Rule apply to all requests for the property hostname(s) unless another rule overrides the Default Rule settings."
+    }
+}

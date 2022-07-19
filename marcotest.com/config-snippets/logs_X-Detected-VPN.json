@@ -1,0 +1,34 @@
+{
+    "name": "logs X-Detected-VPN",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "setVariable",
+            "options": {
+                "variableName": "PMUSER_VPN",
+                "valueSource": "EXTRACT",
+                "transform": "NONE",
+                "extractLocation": "CLIENT_REQUEST_HEADER",
+                "headerName": "X-Detected-VPN"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "requestType",
+            "options": {
+                "matchOperator": "IS_NOT",
+                "value": "CLIENT_REQ"
+            }
+        },
+        {
+            "name": "requestHeader",
+            "options": {
+                "headerName": "X-Detected-VPN",
+                "matchOperator": "EXISTS",
+                "matchWildcardName": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

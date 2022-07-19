@@ -1,0 +1,37 @@
+{
+    "name": "marcotest.com",
+    "propertyId": 551106,
+    "propertyName": "marcotest.com",
+    "groupId": 19293,
+    "isSecure": true,
+    "latestVersionInfo": {
+        "propertyVersion": 328,
+        "updatedByUser": "margomez",
+        "updatedDate": "2022-07-14T21:27:11Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "c13807ffd6b8dc08a526d6711e658fe482738a24",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    },
+    "activeIn_STAGING_Info": {
+        "propertyVersion": 326,
+        "updatedByUser": "margomez",
+        "updatedDate": "2022-04-20T19:32:31Z",
+        "productionStatus": "ACTIVE",
+        "stagingStatus": "ACTIVE",
+        "etag": "5f8f5ea8fe8fdd29e8c4e013b3b58670609c943d",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    },
+    "activeIn_PRODUCTION_Info": {
+        "propertyVersion": 326,
+        "updatedByUser": "margomez",
+        "updatedDate": "2022-04-20T19:32:31Z",
+        "productionStatus": "ACTIVE",
+        "stagingStatus": "ACTIVE",
+        "etag": "5f8f5ea8fe8fdd29e8c4e013b3b58670609c943d",
+        "productId": "prd_Fresca",
+        "ruleFormat": "latest"
+    }
+}

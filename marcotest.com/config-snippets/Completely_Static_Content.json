@@ -1,0 +1,48 @@
+{
+    "name": "Completely Static Content",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "MAX_AGE",
+                "mustRevalidate": false,
+                "ttl": "1d"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "fileExtension",
+            "options": {
+                "matchCaseSensitive": false,
+                "matchOperator": "IS_ONE_OF",
+                "values": [
+                    "css",
+                    "gif",
+                    "jpg",
+                    "js",
+                    "png",
+                    "pict",
+                    "tif",
+                    "tiff",
+                    "mid",
+                    "midi",
+                    "ttf",
+                    "eot",
+                    "woff",
+                    "woff2",
+                    "otf",
+                    "svg",
+                    "svgz",
+                    "webp",
+                    "jxr",
+                    "class",
+                    "jar",
+                    "jp2"
+                ]
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "any"
+}

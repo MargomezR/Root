@@ -1,0 +1,75 @@
+{
+    "name": "Image and Video Manager (Images)",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "MAX_AGE",
+                "mustRevalidate": false,
+                "ttl": "30d"
+            }
+        },
+        {
+            "name": "imageManager",
+            "options": {
+                "advanced": false,
+                "apiReferenceTitle": "",
+                "applyBestFileType": true,
+                "enabled": true,
+                "policyTokenDefault": "marcotest_com",
+                "resize": false,
+                "settingsTitle": "",
+                "superCacheRegion": "US",
+                "trafficTitle": "",
+                "cpCodeOriginal": {
+                    "id": 1093783,
+                    "description": "Pristinemarcotest.com",
+                    "products": [
+                        "Fresca"
+                    ],
+                    "createdDate": 1600899556000,
+                    "cpCodeLimits": {
+                        "limit": 3548,
+                        "currentCapacity": -976,
+                        "limitType": "account"
+                    },
+                    "name": "Pristinemarcotest.com"
+                },
+                "cpCodeTransformed": {
+                    "id": 1093784,
+                    "description": "Derivativemarcotest.com",
+                    "products": [
+                        "Fresca"
+                    ],
+                    "createdDate": 1600899569000,
+                    "cpCodeLimits": {
+                        "limit": 3548,
+                        "currentCapacity": -977,
+                        "limitType": "account"
+                    },
+                    "name": "Derivativemarcotest.com"
+                },
+                "useExistingPolicySet": false
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "fileExtension",
+            "options": {
+                "matchCaseSensitive": false,
+                "matchOperator": "IS_ONE_OF",
+                "values": [
+                    "jpg",
+                    "gif",
+                    "jpeg",
+                    "png",
+                    "imviewer"
+                ]
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all",
+    "comments": "Enable Scale for Mobile to serve the best available size for the requesting device. (Careful testing is highly recommended.) Enable Use Best File Type to serve the image format that works best for the requesting client. To configure breakpoint widths, derivative image quality, and artistic transformations, save and activate this configuration; then, create policies for this policy set via either Image and Video Manager Policy Manager or the OPEN Image and Video Manager API."
+}

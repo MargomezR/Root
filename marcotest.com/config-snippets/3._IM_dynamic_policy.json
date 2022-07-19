@@ -1,0 +1,71 @@
+{
+    "name": "3. IM dynamic policy",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "setVariable",
+            "options": {
+                "variableName": "PMUSER_WIDTH",
+                "valueSource": "EXTRACT",
+                "transform": "NONE",
+                "extractLocation": "QUERY_STRING",
+                "queryParameterName": "w"
+            }
+        },
+        {
+            "name": "setVariable",
+            "options": {
+                "variableName": "PMUSER_HEIGHT",
+                "valueSource": "EXTRACT",
+                "transform": "NONE",
+                "extractLocation": "QUERY_STRING",
+                "queryParameterName": "h"
+            }
+        },
+        {
+            "name": "imOverride",
+            "options": {
+                "override": "POLICY_VARIABLE",
+                "policyvarName": "IMRWIDTH",
+                "policyvarIMvar": "PMUSER_WIDTH"
+            }
+        },
+        {
+            "name": "imOverride",
+            "options": {
+                "override": "POLICY_VARIABLE",
+                "policyvarName": "IMRHEIGHT",
+                "policyvarIMvar": "PMUSER_HEIGHT"
+            }
+        },
+        {
+            "name": "imOverride",
+            "options": {
+                "override": "POLICY",
+                "typesel": "VALUE",
+                "policy": "dynamic_policy"
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "queryStringParameter",
+            "options": {
+                "parameterName": "w",
+                "matchOperator": "EXISTS",
+                "matchWildcardName": false,
+                "matchCaseSensitiveName": true
+            }
+        },
+        {
+            "name": "queryStringParameter",
+            "options": {
+                "parameterName": "h",
+                "matchOperator": "EXISTS",
+                "matchWildcardName": false,
+                "matchCaseSensitiveName": true
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

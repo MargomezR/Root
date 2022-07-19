@@ -1,0 +1,29 @@
+{
+    "name": "dev",
+    "propertyName": "dev.marco_devops_test_delete",
+    "groupId": 19293,
+    "isSecure": true,
+    "propertyId": 816751,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "margomez",
+        "updatedDate": "2022-07-14T16:29:48Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "PENDING",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2021-09-22"
+    },
+    "suggestedRuleFormat": "v2021-09-22",
+    "environmentHash": "b6cacb0b03fc343778545e30d855d3431af1f1d8b63512377066319efb4d84b0",
+    "ruleTreeHash": "4b40842df745413e7da954d7172f763283dca2333f209249e969d7886a2b3859",
+    "lastSavedHash": "b6cacb0b03fc343778545e30d855d3431af1f1d8b63512377066319efb4d84b0",
+    "lastValidatedHash": "b6cacb0b03fc343778545e30d855d3431af1f1d8b63512377066319efb4d84b0",
+    "lastSaveWarnings": [],
+    "lastSaveErrors": [],
+    "lastSaveHostnameErrors": [],
+    "lastSaveHostnameWarnings": [],
+    "lastSavedHostnamesHash": "35a588eba25e1dac28d355fcdef19ef280e3087a3094dfb6c821211feec16995",
+    "pendingActivations": {
+        "STAGING": 11695257
+    }
+}

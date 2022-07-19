@@ -1,0 +1,36 @@
+{
+    "name": "marco_devops_test_delete",
+    "propertyName": "marco_devops_test_delete.marco_devops_test_delete",
+    "groupId": 19293,
+    "isSecure": true,
+    "propertyId": 816748,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "margomez",
+        "updatedDate": "2022-07-14T22:19:20Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "ACTIVE",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2021-09-22"
+    },
+    "suggestedRuleFormat": "v2021-09-22",
+    "environmentHash": "530b910662b8f0857dc3e6873eb4fcba5f19dd5e84c823b9cca68a93bbeec687",
+    "ruleTreeHash": "f5a641406be4e308b2e6c3fc670b1f311c3063b69bb145a2682c8284f1e7cbe9",
+    "lastValidatedHash": "530b910662b8f0857dc3e6873eb4fcba5f19dd5e84c823b9cca68a93bbeec687",
+    "lastSaveWarnings": [],
+    "lastSaveErrors": [],
+    "lastSavedHash": "530b910662b8f0857dc3e6873eb4fcba5f19dd5e84c823b9cca68a93bbeec687",
+    "lastSaveHostnameErrors": [],
+    "lastSaveHostnameWarnings": [],
+    "lastSavedHostnamesHash": "6e68fa4820a85eabe08f66275258504fe9454c7cbf87606e80c836fe6ed66628",
+    "activeIn_STAGING_Info": {
+        "propertyVersion": 1,
+        "updatedByUser": "margomez",
+        "updatedDate": "2022-07-14T22:19:20Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "ACTIVE",
+        "etag": "5466d7f8db480b671224260fc6fb2f716045d57d",
+        "productId": "prd_Fresca",
+        "ruleFormat": "v2021-09-22"
+    }
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 3193437,
+        "cnameFrom": "marco_devops_test_delete.davidbartosh.com",
+        "cnameTo": "wildcard.davidbartosh.com.edgekey.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]

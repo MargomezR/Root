@@ -1,0 +1,23 @@
+[
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 3193437,
+        "cnameFrom": "staging1_marco_devops_test_delete.davidbartosh.com",
+        "cnameTo": "wildcard.davidbartosh.com.edgekey.net",
+        "certProvisioningType": "CPS_MANAGED"
+    },
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 3193437,
+        "cnameFrom": "staging2_marco_devops_test_delete.davidbartosh.com",
+        "cnameTo": "wildcard.davidbartosh.com.edgekey.net",
+        "certProvisioningType": "CPS_MANAGED"
+    },
+    {
+        "cnameType": "EDGE_HOSTNAME",
+        "edgeHostnameId": 3193437,
+        "cnameFrom": "staging3_marco_devops_test_delete.davidbartosh.com",
+        "cnameTo": "wildcard.davidbartosh.com.edgekey.net",
+        "certProvisioningType": "CPS_MANAGED"
+    }
+]

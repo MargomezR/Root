@@ -39,7 +39,7 @@
                     "options": {
                         "behavior": "MAX_AGE",
                         "mustRevalidate": false,
-                        "ttl": "30d"
+                        "ttl": "7d"
                     }
                 }
             ],
@@ -107,7 +107,7 @@
                     "options": {
                         "behavior": "MAX_AGE",
                         "mustRevalidate": false,
-                        "ttl": "7d"
+                        "ttl": "30d"
                     }
                 }
             ],
